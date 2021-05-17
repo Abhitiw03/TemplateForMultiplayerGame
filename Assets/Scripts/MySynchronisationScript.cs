@@ -91,4 +91,10 @@ public class MySynchronisationScript : MonoBehaviour, IPunObservable
                 if (synchronisedAngularVelocity)
                 {
                     rb.angularVelocity = (Vector3)stream.ReceiveNext();
-                    networkRotation = Quate
+                    networkRotation = Quaternion.Euler(rb.angularVelocity * lag) * networkRotation;
+                    angle = Quaternion.Angle(rb.rotation, networkRotation);
+                }
+            }
+        }
+    }
+}

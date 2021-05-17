@@ -563,6 +563,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21a05b77df587e14c83681a8a59451ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  synchronisedVelocity: 1
+  synchronisedAngularVelocity: 1
+  distance: 0
+  angle: 0
+  isTeleportEnabled: 1
+  teleportDistanceGreaterThan: 5
 --- !u!1 &5638721230500570159
 GameObject:
   m_ObjectHideFlags: 0
